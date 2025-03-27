@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông Tin Nhân Viên"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="#800080"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Mã Nhân Viên -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã Nhân Viên"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtEmployeeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <!-- Họ Tên -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họ Tên"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"/>
+
+    <!-- Ngày Sinh -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày Sinh"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtDateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"/>
+
+    <!-- Giới Tính -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giới Tính"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"/>
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <!-- Địa Chỉ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa Chỉ"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"/>
+
+    <!-- Mã Phòng Ban -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã Phòng Ban"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtDepartmentId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sửa"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xóa"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đóng"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+</LinearLayout>

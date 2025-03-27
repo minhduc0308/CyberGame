@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh Sách Nhân Viên"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="#800080"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Image from assets -->
+    <ImageView
+        android:id="@+id/ivEmployeeImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Hình ảnh nhân viên" />
+
+
+    <!-- Button để chuyển sang màn hình thông tin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnEmployeeList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Danh Sách Nhân Viên"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnEmployeeInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="Thông Tin Nhân Viên"/>
+    </LinearLayout>
+</LinearLayout>
